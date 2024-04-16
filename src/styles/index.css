@@ -1,0 +1,10 @@
+body {
+  background-color: hsl(30, 100%, 99%);
+}
+
+.hero__title {
+  text-transform: uppercase;
+  color: hsl(339, 77%, 48%);
+}
+
+/*# sourceMappingURL=index.css.map */

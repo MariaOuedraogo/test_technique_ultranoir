@@ -1,0 +1,9 @@
+@import 'globals';
+
+.hero {
+
+    &__title {
+        text-transform: uppercase;
+        color: $primary-color;
+    }
+}
