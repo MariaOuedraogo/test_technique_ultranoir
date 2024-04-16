@@ -37,7 +37,15 @@ $primary-color: hsla(339, 77%, 48%, 1);
 $title-color :hsla(0, 0%, 0%, 1);
 $bg-color : hsla(30, 100%, 99%, 1);
 
-body {
-    background-color: $bg-color;
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background-color: $bg-color;
+}
