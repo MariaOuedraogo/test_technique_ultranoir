@@ -31,4 +31,42 @@ body {
   color: hsl(339, 77%, 48%);
 }
 
+@font-face {
+  font-family: "title-font";
+  src: url("../assets/fonts/din/DIN_Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN_Condensed Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "subtitle-font";
+  src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "text-font";
+  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "text-font";
+  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  background-color: hsl(30, 100%, 99%);
+}
+
+.button {
+  background-color: hsl(339, 77%, 48%);
+  border-radius: 5rem;
+  border: none;
+  font-family: "text-font";
+  font-weight: bold;
+  color: hsl(30, 100%, 99%);
+  padding: 1rem 1.3rem;
+}
+
 /*# sourceMappingURL=index.css.map */
