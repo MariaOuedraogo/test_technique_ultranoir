@@ -1,7 +1,43 @@
-$primary-color:hsla(339, 77%, 48%, 1);
+// Din
+@font-face {
+    font-family: "title-font";
+    src: url('../assets/fonts/din/DIN_Condensed\ Bold.woff2') format('woff2'),
+        url('../assets/fonts/din/DIN_Condensed\ Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// Arial
+@font-face {
+    font-family: "subtitle-font";
+    src: url('../assets/fonts/arial/Arial.woff2') format('woff2'),
+        url('../assets/fonts/arial/Arial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Century-Gothic
+@font-face {
+    font-family: "text-font";
+    src: url('../assets/fonts/century_gothic/Monotype\ -\ Century\ Gothic.woff2') format('woff2'),
+        url('../assets/fonts/century_gothic/Monotype\ -\ Century\ Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "text-font";
+    src: url('../assets/fonts/century_gothic/Monotype\ -\ Century\ Gothic\ Bold.woff2') format('woff2'),
+        url('../assets/fonts/century_gothic/Monotype\ -\ Century\ Gothic\ Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+$primary-color: hsla(339, 77%, 48%, 1);
 $title-color :hsla(0, 0%, 0%, 1);
 $bg-color : hsla(30, 100%, 99%, 1);
 
-body{
+body {
     background-color: $bg-color;
 }
+
