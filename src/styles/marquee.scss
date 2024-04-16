@@ -1,0 +1,35 @@
+@import 'globals';
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+
+    &__text {
+        font-family: "title-font",sans-serif;
+        font-size: 4.612rem;
+        text-transform: uppercase;
+        color: $primary-color;
+        will-change: transform;
+        transform: translateX(0);
+        white-space: nowrap;
+        animation: marquee 15s linear infinite;
+    }
+}
+
+@media (min-width:800px){
+    .marquee__text{
+        font-size: 12.875rem;
+    }
+}

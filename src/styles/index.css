@@ -69,4 +69,63 @@ body {
   padding: 1rem 1.3rem;
 }
 
+@font-face {
+  font-family: "title-font";
+  src: url("../assets/fonts/din/DIN_Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN_Condensed Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "subtitle-font";
+  src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "text-font";
+  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "text-font";
+  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  background-color: hsl(30, 100%, 99%);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.marquee {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.marquee__text {
+  font-family: "title-font", sans-serif;
+  font-size: 4.612rem;
+  text-transform: uppercase;
+  color: hsl(339, 77%, 48%);
+  will-change: transform;
+  transform: translateX(0);
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+@media (min-width: 800px) {
+  .marquee__text {
+    font-size: 12.875rem;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
