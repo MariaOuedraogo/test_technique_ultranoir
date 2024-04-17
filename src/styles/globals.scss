@@ -1,8 +1,8 @@
 // Din
 @font-face {
     font-family: "title-font";
-    src: url('../assets/fonts/din/DIN_Condensed\ Bold.woff2') format('woff2'),
-        url('../assets/fonts/din/DIN_Condensed\ Bold.woff') format('woff');
+    src: url('../assets/fonts/din/DIN\ Condensed\ Bold.woff2') format('woff2'),
+        url('../assets/fonts/din/DIN\ Condensed\ Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -34,7 +34,7 @@
 }
 
 $primary-color: hsla(339, 77%, 48%, 1);
-$title-color :hsla(0, 0%, 0%, 1);
+$text-color :hsla(0, 0%, 0%, 1);
 $bg-color : hsla(30, 100%, 99%, 1);
 
 
@@ -48,4 +48,5 @@ $bg-color : hsla(30, 100%, 99%, 1);
 body {
     margin: 0;
     background-color: $bg-color;
+    color: $text-color;
 }

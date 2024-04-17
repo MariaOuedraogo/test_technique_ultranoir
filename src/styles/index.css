@@ -1,6 +1,6 @@
 @font-face {
   font-family: "title-font";
-  src: url("../assets/fonts/din/DIN_Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN_Condensed Bold.woff") format("woff");
+  src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -31,16 +31,27 @@
 body {
   margin: 0;
   background-color: hsl(30, 100%, 99%);
+  color: hsl(0, 0%, 0%);
 }
 
+.hero__img {
+  margin: 50.31px auto 0;
+  display: block;
+}
 .hero__title {
   text-transform: uppercase;
   color: hsl(339, 77%, 48%);
+  font-family: "title-font", sans-serif;
+  font-size: 4.375rem;
+  text-align: center;
+  letter-spacing: 0.175rem;
+  line-height: 3.875rem;
+  margin-bottom: 30px;
 }
 
 @font-face {
   font-family: "title-font";
-  src: url("../assets/fonts/din/DIN_Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN_Condensed Bold.woff") format("woff");
+  src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -71,6 +82,7 @@ body {
 body {
   margin: 0;
   background-color: hsl(30, 100%, 99%);
+  color: hsl(0, 0%, 0%);
 }
 
 .button {
@@ -80,12 +92,11 @@ body {
   font-family: "text-font";
   font-weight: bold;
   color: hsl(30, 100%, 99%);
-  padding: 1rem 1.3rem;
 }
 
 @font-face {
   font-family: "title-font";
-  src: url("../assets/fonts/din/DIN_Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN_Condensed Bold.woff") format("woff");
+  src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -116,6 +127,7 @@ body {
 body {
   margin: 0;
   background-color: hsl(30, 100%, 99%);
+  color: hsl(0, 0%, 0%);
 }
 
 @keyframes marquee {
@@ -147,6 +159,112 @@ body {
   .marquee__text {
     font-size: 12.875rem;
   }
+}
+@font-face {
+  font-family: "title-font";
+  src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "subtitle-font";
+  src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "text-font";
+  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "text-font";
+  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(30, 100%, 99%);
+  color: hsl(0, 0%, 0%);
+}
+
+.slides-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: hidden;
+  gap: 15px;
+  padding: 0 30px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.slides {
+  scroll-snap-align: center;
+}
+.slides__image-container {
+  aspect-ratio: 339/340;
+}
+.slides__image {
+  height: 100%;
+  border-radius: 0.625rem;
+  object-fit: cover;
+  width: 100%;
+}
+.slides__text-container {
+  padding: 0 20px;
+}
+.slides__title {
+  font-family: "title-font", sans-serif;
+  text-transform: uppercase;
+  color: hsl(339, 77%, 48%);
+  font-size: 2.5rem;
+  line-height: 2.375rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0;
+  width: 240px;
+}
+.slides__subtitle {
+  font-family: "subtitle-font", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.375rem;
+  margin: 7px 0 10px;
+  width: 280px;
+}
+.slides__text {
+  font-family: "text-font", sans-serif;
+  font-size: 0.813rem;
+  line-height: 1.431rem;
+  margin: 0 0 20px;
+}
+.slides__button {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0.2rem 1rem;
+  width: 100%;
+}
+.slides__button-text {
+  font-weight: bold;
+}
+.slides__num {
+  text-align: center;
+  font-family: "text-font";
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=index.css.map */
