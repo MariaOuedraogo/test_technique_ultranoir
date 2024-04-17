@@ -1,9 +1,22 @@
 @import 'globals';
 
 .hero {
+    &__img {
+        margin: 50.31px auto 0;
+        display: block;
+    }
 
     &__title {
         text-transform: uppercase;
         color: $primary-color;
+        font-family: "title-font", sans-serif;
+        font-size: 4.375rem;
+        text-align: center;
+        letter-spacing: 0.175rem;
+        line-height: 3.875rem;
+        margin-bottom: 30px;
+        // margin: 156px 0 18px;
+
     }
+
 }
