@@ -1,5 +1,11 @@
-export function Discover() {
+import React from 'react';
+
+export function Discover(props) {
     return (
-        <h1 className="discover__title">Discover the range</h1>
+        <React.Fragment>
+            <h1 className="discover__title">Discover the range</h1>
+            {props.children}
+
+        </React.Fragment>
     );
 }
