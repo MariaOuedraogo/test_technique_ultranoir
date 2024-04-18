@@ -20,3 +20,17 @@
     }
 
 }
+
+@media(min-width:1000px) {
+    .hero {
+        &__img{
+            position: absolute;
+            margin:30.31px 36px ;
+
+        }
+
+        &__title{
+            display: none;
+        }
+    }
+}
