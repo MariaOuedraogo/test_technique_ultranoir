@@ -3,24 +3,28 @@
   src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "subtitle-font";
   src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 *,
 *::before,
@@ -63,24 +67,28 @@ body {
   src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "subtitle-font";
   src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 *,
 *::before,
@@ -108,24 +116,28 @@ body {
   src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "subtitle-font";
   src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 *,
 *::before,
@@ -174,24 +186,28 @@ body {
   src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "subtitle-font";
   src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 *,
 *::before,
@@ -213,12 +229,8 @@ body {
   gap: 15px;
   padding: 0 30px;
   scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
 }
 
-.slide {
-  scroll-snap-align: center;
-}
 .slide__image-container {
   aspect-ratio: 339/340;
 }
@@ -273,7 +285,7 @@ body {
   font-family: "text-font";
   font-size: 0.75rem;
   line-height: 1.5rem;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .desk-slides-container--show {
@@ -343,6 +355,7 @@ body {
     padding: 0.2rem 2rem;
     margin: 0;
     font-size: 0.813rem;
+    cursor: pointer;
   }
   .desk-slide__image-container {
     max-height: 95vh;
@@ -376,6 +389,196 @@ body {
   .desk-slide__arrow {
     margin-top: 50px;
     cursor: pointer;
+  }
+}
+@font-face {
+  font-family: "title-font";
+  src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "subtitle-font";
+  src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "text-font";
+  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "text-font";
+  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(30, 100%, 99%);
+  color: hsl(0, 0%, 0%);
+}
+
+.flowershow {
+  position: relative;
+}
+
+.flowershow-background {
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.flowershow__image-container {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: -3px;
+}
+.flowershow__image--first-move {
+  margin-left: -20px;
+}
+.flowershow__image--second-move {
+  margin-left: -5px;
+}
+.flowershow__image--third-move {
+  margin-left: -35px;
+}
+.flowershow__image--fourth-move {
+  margin-left: -100px;
+}
+.flowershow__image--fifth-move {
+  margin-left: -10px;
+}
+.flowershow__image {
+  width: 100%;
+}
+
+.perfume-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0);
+  width: 60%;
+  margin-top: -20px;
+}
+
+.perfume__image {
+  width: 100%;
+}
+.perfume__hiding-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.perfume__hiding-image--moved-11 {
+  transform: translate(-115%, 10%);
+  width: 50%;
+}
+.perfume__hiding-image--moved-1 {
+  transform: translate(0%, -75%);
+  width: 50%;
+}
+.perfume__hiding-image--moved-10 {
+  transform: translate(-50%, -85%);
+  width: 31%;
+}
+.perfume__hiding-image--moved-14 {
+  transform: translate(-130%, -60%);
+  width: 40%;
+}
+.perfume__hiding-image--moved-4 {
+  transform: translate(30%, -30%);
+  width: 45%;
+}
+.perfume__hiding-image--moved-40 {
+  transform: translate(-150%, 27%);
+  width: 30%;
+  z-index: 1;
+}
+.perfume__hiding-image--moved-39 {
+  transform: translate(8%, 90%);
+  width: 20%;
+  z-index: 1;
+}
+.perfume__hiding-image--moved-12 {
+  transform: translate(15%, 6%);
+  width: 55%;
+}
+.perfume__hiding-image--moved-2 {
+  transform: translate(-75%, -110%);
+  width: 50%;
+}
+.perfume__hiding-image--moved-13 {
+  transform: translate(-30%, -120%);
+  z-index: 1;
+  width: 55%;
+}
+.perfume__hiding-image--moved-35 {
+  transform: translate(-100%, -110%);
+  width: 40%;
+}
+.perfume__hiding-image--moved-3 {
+  transform: translate(-50%, 35%);
+  width: 47%;
+}
+.perfume__hiding-image--moved-8 {
+  transform: translate(-90%, -48%);
+  width: 65%;
+}
+.perfume__hiding-image--moved-5 {
+  transform: translate(-31%, -49%);
+  width: 48%;
+}
+.perfume__hiding-text {
+  font-family: "text-font", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+  background-color: hsl(30, 100%, 99%);
+  z-index: 10;
+  position: absolute;
+  border-radius: 50%;
+  padding: 1.5rem 1rem;
+  font-size: 0.813rem;
+  transform: translate(100%, -65%);
+  width: 40%;
+  height: 40%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) {
+  .perfume-container {
+    width: 27%;
+  }
+  .flowershow__image-container--fourth-move, .flowershow__image-container--fifth-move {
+    display: none;
+  }
+  .flowershow__image--first-move {
+    margin-left: -20px;
+  }
+  .flowershow__image--second-move {
+    margin-left: -50px;
+  }
+  .flowershow__image--third-move {
+    margin-left: -5px;
+  }
+  .perfume__hiding-text {
+    width: 25%;
+    height: 25%;
   }
 }
 

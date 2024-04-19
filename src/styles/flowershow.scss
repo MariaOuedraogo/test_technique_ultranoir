@@ -1,0 +1,232 @@
+@import 'globals';
+
+.flowershow {
+    position: relative;
+}
+
+.flowershow-background {
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.flowershow {
+
+   
+
+    &__image-container {
+        display: flex;
+        overflow: hidden;
+        margin-bottom: -3px;
+
+    }
+
+    &__image--first-move {
+        margin-left: -20px;
+    }
+
+    &__image--second-move {
+        margin-left: -5px;
+    }
+
+    &__image--third-move {
+        margin-left: -35px;
+    }
+
+    &__image--fourth-move {
+        margin-left: -100px;
+    }
+
+    &__image--fifth-move {
+        margin-left: -10px;
+    }
+
+    &__image {
+
+        width: 100%;
+
+
+    }
+
+}
+
+.perfume-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
+    width: 60%;
+    margin-top: -20px;
+
+}
+
+
+
+.perfume {
+
+    &__image {
+        width: 100%;
+    }
+
+    &__hiding-image {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+
+    &__hiding-image--moved-11 {
+
+        transform: translate(-115%, 10%);
+        width: 50%;
+
+    }
+
+    &__hiding-image--moved-1 {
+
+        transform: translate(0%, -75%);
+        width: 50%;
+
+
+    }
+
+    &__hiding-image--moved-10 {
+
+        transform: translate(-50%, -85%);
+        width: 31%;
+    }
+
+    &__hiding-image--moved-14 {
+
+        transform: translate(-130%, -60%);
+        width: 40%;
+    }
+
+    &__hiding-image--moved-4 {
+
+        transform: translate(30%, -30%);
+        width: 45%;
+    }
+
+    &__hiding-image--moved-40 {
+
+        transform: translate(-150%, 27%);
+        width: 30%;
+        z-index: 1;
+    }
+
+    &__hiding-image--moved-39 {
+
+        transform: translate(8%, 90%);
+        width: 20%;
+        z-index: 1;
+    }
+
+    &__hiding-image--moved-12 {
+
+        transform: translate(15%, 6%);
+        width: 55%;
+    }
+
+    &__hiding-image--moved-2 {
+
+        transform: translate(-75%, -110%);
+        width: 50%;
+    }
+
+
+    &__hiding-image--moved-13 {
+
+        transform: translate(-30%, -120%);
+        z-index: 1;
+        width: 55%;
+    }
+
+    &__hiding-image--moved-35 {
+
+        transform: translate(-100%, -110%);
+        width: 40%;
+    }
+
+    &__hiding-image--moved-3 {
+
+        transform: translate(-50%, 35%);
+        width: 47%;
+    }
+
+    &__hiding-image--moved-8 {
+
+        transform: translate(-90%, -48%);
+        width: 65%;
+
+    }
+
+    &__hiding-image--moved-5 {
+
+        transform: translate(-31%, -49%);
+        width: 48%;
+
+    }
+
+    &__hiding-text {
+        font-family: 'text-font', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: $text-color;
+        background-color: $bg-color;
+        z-index: 10;
+        position: absolute;
+        border-radius: 50%;
+        padding: 1.5rem 1rem;
+        font-size: $subtitle-size;
+        transform: translate(100%, -65%);
+        width: 40%;
+        height: 40%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+
+}
+
+
+@media(min-width:1000px) {
+    .perfume-container {
+        width: 27%;
+
+    }
+
+    .flowershow {
+
+
+        &__image-container--fourth-move,
+        &__image-container--fifth-move {
+            display: none;
+        }
+
+        &__image--first-move {
+            margin-left: -20px;
+        }
+    
+        &__image--second-move {
+            margin-left: -50px;
+        }
+    
+        &__image--third-move {
+            margin-left: -5px;
+        }
+    
+
+
+    }
+
+    .perfume {
+        &__hiding-text {
+            width: 25%;
+            height: 25%;
+        }
+    }
+
+}
