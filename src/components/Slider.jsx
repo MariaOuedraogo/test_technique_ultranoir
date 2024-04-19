@@ -13,7 +13,7 @@ const sliderComponent = [
         subtitleShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget velit a elit finibus lacinia id at diam. Proin placerat dignissim risus ac finibus. Sed fermentum, sem et dignissim venenatis, felis massa volutpat eros.",
         detailsShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget velit a elit finibus lacinia id at diam.",
-        img: "/src/assets/images/slider/garden.jpg"
+        img: "/src/assets/images/slider/garden.webp"
 
     },
 
@@ -24,7 +24,7 @@ const sliderComponent = [
         subtitleShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget velit a elit finibus lacinia id at diam. Proin placerat dignissim risus ac finibus. Sed fermentum, sem et dignissim venenatis, felis massa volutpat eros.",
         detailsShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget velit a elit finibus lacinia id at diam.",
-        img: "/src/assets/images/slider/essences.jpg"
+        img: "/src/assets/images/slider/essences.webp"
 
     },
 
@@ -35,7 +35,7 @@ const sliderComponent = [
         subtitleShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget velit a elit finibus lacinia id at diam. Proin placerat dignissim risus ac finibus. Sed fermentum, sem et dignissim venenatis, felis massa volutpat eros.",
         detailsShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget velit a elit finibus lacinia id at diam.",
-        img: "/src/assets/images/slider/symbiosis.jpg"
+        img: "/src/assets/images/slider/symbiosis.webp"
 
     },
     {
@@ -45,7 +45,7 @@ const sliderComponent = [
         subtitleShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget velit a elit finibus lacinia id at diam. Proin placerat dignissim risus ac finibus. Sed fermentum, sem et dignissim venenatis, felis massa volutpat eros.",
         detailsShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget velit a elit finibus lacinia id at diam.",
-        img: "/src/assets/images/slider/flower_to_bottle.jpg"
+        img: "/src/assets/images/slider/flower_to_bottle.webp"
 
     },
     {
@@ -54,7 +54,7 @@ const sliderComponent = [
         subtitleShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget velit a elit finibus lacinia id at diam. Proin placerat dignissim risus ac finibus. Sed fermentum, sem et dignissim venenatis, felis massa volutpat eros.",
         detailsShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget velit a elit finibus lacinia id at diam.",
-        img: "/src/assets/images/slider/miss_dior.jpg"
+        img: "/src/assets/images/slider/miss_dior.webp"
 
     },
 
@@ -92,22 +92,22 @@ export function Slider() {
             // Peut-être ajouter des opérations supplémentaires lors du relâchement du glisser-déposer
         }
 
-        sliding.addEventListener('touchstart', dragStart);
-        sliding.addEventListener('touchmove', dragging);
-        sliding.addEventListener('touchend', dragEnd);
-        sliding.addEventListener('mousedown', dragStart);
-        sliding.addEventListener('mousemove', dragging);
-        sliding.addEventListener('mouseup', dragEnd);
-        sliding.addEventListener('mouseleave', dragEnd);
+        sliding.addEventListener('touchstart', dragStart, { passive: true });
+        sliding.addEventListener('touchmove', dragging, { passive: true });
+        sliding.addEventListener('touchend', dragEnd, { passive: true });
+        sliding.addEventListener('mousedown', dragStart, { passive: true });
+        sliding.addEventListener('mousemove', dragging, { passive: true });
+        sliding.addEventListener('mouseup', dragEnd, { passive: true });
+        sliding.addEventListener('mouseleave', dragEnd, { passive: true });
 
         return () => {
-            sliding.removeEventListener('touchstart', dragStart);
-            sliding.removeEventListener('touchmove', dragging);
-            sliding.removeEventListener('touchend', dragEnd);
-            sliding.removeEventListener('mousedown', dragStart);
-            sliding.removeEventListener('mousemove', dragging);
-            sliding.removeEventListener('mouseup', dragEnd);
-            sliding.removeEventListener('mouseleave', dragEnd);
+            sliding.removeEventListener('touchstart', dragStart, { passive: true });
+            sliding.removeEventListener('touchmove', dragging, { passive: true });
+            sliding.removeEventListener('touchend', dragEnd, { passive: true });
+            sliding.removeEventListener('mousedown', dragStart, { passive: true });
+            sliding.removeEventListener('mousemove', dragging, { passive: true });
+            sliding.removeEventListener('mouseup', dragEnd,{ passive: true });
+            sliding.removeEventListener('mouseleave', dragEnd, { passive: true });
         };
     }, []);
 
