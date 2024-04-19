@@ -79,7 +79,7 @@ export function Slider() {
         }
 
         const dragging = (e) => {
-            e.preventDefault(); // Pour empêcher le défilement par défaut pendant le drag and drop
+            // e.preventDefault(); // Pour empêcher le défilement par défaut pendant le drag and drop
             if (startX !== undefined) {
                 const currentX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
                 const diffX = startX - currentX;
