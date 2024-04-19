@@ -9,14 +9,14 @@
     gap: 15px;
     padding: 0 30px;
     scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+    // scroll-snap-type: x mandatory;
 
 
 
 }
 
 .slide {
-    scroll-snap-align: center;
+    // scroll-snap-align: center;
 
     &__image-container {
         aspect-ratio: 339/340;
@@ -89,7 +89,7 @@
         font-family: 'text-font';
         font-size: .75rem;
         line-height: 1.5rem;
-        margin-top: 50px;
+        margin-top: 20px;
 
     }
 }
@@ -183,6 +183,7 @@
             padding: .2rem 2rem;
             margin: 0;
             font-size: .813rem;
+            cursor: pointer;
         }
 
         &__image-container {
