@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
+    padding-top:70px ;
 
     &__text {
         font-family: "title-font",sans-serif;
@@ -28,7 +29,7 @@
     }
 }
 
-@media (min-width:800px){
+@media (min-width:1000px){
     .marquee__text{
         font-size: 12.875rem;
     }

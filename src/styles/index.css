@@ -164,6 +164,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
+  padding-top: 70px;
 }
 .marquee__text {
   font-family: "title-font", sans-serif;
@@ -176,7 +177,7 @@ body {
   animation: marquee 15s linear infinite;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .marquee__text {
     font-size: 12.875rem;
   }
@@ -440,6 +441,12 @@ body {
   margin-top: 50px;
 }
 
+.flowershow {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
+}
 .flowershow__image-container {
   display: flex;
   overflow: hidden;
@@ -580,6 +587,54 @@ body {
     width: 25%;
     height: 25%;
   }
+}
+@font-face {
+  font-family: "title-font";
+  src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "subtitle-font";
+  src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "text-font";
+  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "text-font";
+  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(30, 100%, 99%);
+  color: hsl(0, 0%, 0%);
+}
+
+.discover-container {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
+  background-color: hsl(30, 100%, 99%);
+  height: 110vh;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -11,7 +11,12 @@
 
 .flowershow {
 
-   
+    position: sticky;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+
+
 
     &__image-container {
         display: flex;
@@ -209,15 +214,15 @@
         &__image--first-move {
             margin-left: -20px;
         }
-    
+
         &__image--second-move {
             margin-left: -50px;
         }
-    
+
         &__image--third-move {
             margin-left: -5px;
         }
-    
+
 
 
     }

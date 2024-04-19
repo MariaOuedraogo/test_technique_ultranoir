@@ -1,11 +1,17 @@
+import '../styles/index.css';
 import React from 'react';
+import { Marquee } from './Marquee';
+
+
 
 export function Discover(props) {
     return (
-        <React.Fragment>
-            <h1 className="discover__title">Discover the range</h1>
-            {props.children}
+        
+            <div className="discover-container">
 
-        </React.Fragment>
+                {props.children}
+                <Marquee></Marquee>
+            </div>
+        
     );
 }

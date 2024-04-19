@@ -1,0 +1,11 @@
+@import 'globals';
+
+
+.discover-container{
+    position: sticky;
+        width: 100%;
+        top: 0;
+        box-sizing: border-box;
+        background-color: $bg-color;
+        height: 110vh;
+}
