@@ -157,6 +157,8 @@ export function Slider() {
         }
     };
 
+    gsap.fromTo('.desk-slide__image',{opacity:0}, {opacity:1, duration:1, delay:1})
+    gsap.fromTo('.desk-slide__text-img--left, .desk-slide__text-img--right',{scale:0}, {scale:1, duration:2, delay:1})
     return (
         <React.Fragment>
 
