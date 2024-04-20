@@ -1,4 +1,4 @@
-@import 'globals';
+@import "globals";
 
 .flowershow {
     position: relative;
@@ -16,13 +16,10 @@
     top: 0;
     box-sizing: border-box;
 
-
-
     &__image-container {
         display: flex;
         overflow: hidden;
         margin-bottom: -3px;
-
     }
 
     &__image--first-move {
@@ -46,10 +43,7 @@
     }
 
     &__image {
-
         width: 100%;
-
-
     }
 
 }
@@ -61,7 +55,6 @@
     transform: translate(-50%, 0);
     width: 60%;
     margin-top: -20px;
-
 }
 
 
@@ -82,15 +75,12 @@
 
         transform: translate(-115%, 10%);
         width: 50%;
-
     }
 
     &__hiding-image--moved-1 {
 
         transform: translate(0%, -75%);
         width: 50%;
-
-
     }
 
     &__hiding-image--moved-10 {
@@ -152,27 +142,22 @@
     }
 
     &__hiding-image--moved-3 {
-
         transform: translate(-50%, 35%);
         width: 47%;
     }
 
     &__hiding-image--moved-8 {
-
         transform: translate(-90%, -48%);
         width: 65%;
-
     }
 
     &__hiding-image--moved-5 {
-
         transform: translate(-31%, -49%);
         width: 48%;
-
     }
 
     &__hiding-text {
-        font-family: 'text-font', sans-serif;
+        font-family: "text-font", sans-serif;
         font-weight: bold;
         text-align: center;
         color: $text-color;
@@ -180,7 +165,7 @@
         z-index: 10;
         position: absolute;
         border-radius: 50%;
-        padding: 1.5rem 1rem;
+        padding: 24px 16px;
         font-size: $subtitle-size;
         transform: translate(100%, -65%);
         width: 40%;
@@ -189,22 +174,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
-
     }
-
-
 }
 
 
 @media(min-width:1000px) {
     .perfume-container {
         width: 27%;
-
     }
 
     .flowershow {
-
 
         &__image-container--fourth-move,
         &__image-container--fifth-move {
@@ -222,8 +201,6 @@
         &__image--third-move {
             margin-left: -5px;
         }
-
-
 
     }
 

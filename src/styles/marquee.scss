@@ -1,4 +1,4 @@
-@import 'globals';
+@import "globals";
 
 @keyframes marquee {
     0% {
@@ -15,10 +15,10 @@
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
-    padding-top:70px ;
+    padding-top: 70px;
 
     &__text {
-        font-family: "title-font",sans-serif;
+        font-family: "title-font", sans-serif;
         font-size: 4.612rem;
         text-transform: uppercase;
         color: $primary-color;
@@ -29,8 +29,8 @@
     }
 }
 
-@media (min-width:1000px){
-    .marquee__text{
+@media (min-width:1000px) {
+    .marquee__text {
         font-size: 12.875rem;
     }
 }

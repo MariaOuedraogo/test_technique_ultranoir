@@ -1,18 +1,15 @@
-import '../styles/index.css';
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
+import "../styles/index.css";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-
-
-
-
 
 
 export function FlowerShow() {
 
     useEffect(() => {
         // moves Miss dior logo  left to right 
+        // if = smaller than 1000px and else other
         if (window.matchMedia("(max-width: 1000px)").matches) {
             gsap.fromTo(".flowershow-background > :nth-child(odd)", {
                 x: "-100%",
@@ -103,7 +100,7 @@ export function FlowerShow() {
         });
 
 
-
+        //scales up the three white flowers imgs
         gsap.fromTo(".perfume__hiding-image--moved-35, .perfume__hiding-image--moved-39 ", {
             scale: .5,
             ease: "power2.inOut",
@@ -116,6 +113,7 @@ export function FlowerShow() {
             }
         });
 
+        //scale up the perfume bottle
         gsap.fromTo(".perfume__hiding-text", {
             opacity: 0,
             ease: "power2.inOut",
@@ -128,9 +126,6 @@ export function FlowerShow() {
             }
         });
 
-
-
-
     }, []);
 
     const reveal = () => {
@@ -138,7 +133,7 @@ export function FlowerShow() {
         // move the flowers
         gsap.to(".perfume__hiding-image--moved-3", { y: 300, opacity: 0, duration: 1 });
         gsap.to(".perfume__hiding-image--moved-11", { x: -500, y: "100%", opacity: 0, duration: 1 });
-        gsap.to(".perfume__hiding-image--moved-12", { x: '75%', y: 200, opacity: 0, duration: 1 });
+        gsap.to(".perfume__hiding-image--moved-12", { x: "75%", y: 200, opacity: 0, duration: 1 });
         gsap.to(".perfume__hiding-image--moved-8", { x: -300, y: "-95%", opacity: 0, duration: 1 });
         gsap.to(".perfume__hiding-image--moved-14", { x: "-200%", y: "-160%", opacity: 0, duration: 1 });
         gsap.to(".perfume__hiding-image--moved-2", { x: "-205%", y: "-200%", opacity: 0, duration: 1 });
@@ -151,7 +146,7 @@ export function FlowerShow() {
         // hide the white flowers 
         gsap.to(".perfume__hiding-image--moved-40, .perfume__hiding-image--moved-39, .perfume__hiding-image--moved-35 ", { opacity: 0, duration: 1, });
 
-        //hide the 'click to reveal' and the hiding perfume div
+        //hide the "click to reveal" and the hiding perfume div
         gsap.to(".perfume__hiding-text ", {
             opacity: 0, duration: 1,
             onComplete: () => {
@@ -171,55 +166,50 @@ export function FlowerShow() {
         <div className="flowershow">
             <div className="flowershow-background flowershow-background-test">
                 <div className="flowershow__image-container flowershow__image-container--first-move">
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className='flowershow__image flowershow__image--third-move ' />
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className='flowershow__image' />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image flowershow__image--third-move " />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image" />
                 </div>
                 <div className="flowershow__image-container flowershow__image-container--second-move">
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className='flowershow__image flowershow__image--second-move ' />
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className='flowershow__image' />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image flowershow__image--second-move " />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image" />
                 </div>
                 <div className="flowershow__image-container flowershow__image-container--third-move">
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className='flowershow__image  flowershow__image--third-move' />
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className='flowershow__image' />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image  flowershow__image--third-move" />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image" />
                 </div>
                 <div className="flowershow__image-container flowershow__image-container--fourth-move ">
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className='flowershow__image flowershow__image--fourth-move  ' />
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className='flowershow__image' />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image flowershow__image--fourth-move  " />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image" />
                 </div>
                 <div className="flowershow__image-container flowershow__image-container--fifth-move">
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className='flowershow__image flowershow__image--fifth-move ' />
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className='flowershow__image' />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image flowershow__image--fifth-move " />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image" />
                 </div>
-
-
             </div>
 
             <div className="perfume-container">
-                <img src="/src/assets/images/flowershow/flacon.webp" alt="" className='perfume__image' />
+                <img src="/src/assets/images/flowershow/flacon.webp" alt="" className="perfume__image" />
+                
                 <div className="perfume__hiding-container">
-                    <img src="/src/assets/images/flowershow/flowers/10.png" alt="" className='perfume__hiding-image  perfume__hiding-image--moved-10' />
-                    <img src="/src/assets/images/flowershow/flowers/11.png" alt="" className='perfume__hiding-image perfume__hiding-image--moved-11' />
-                    <img src="/src/assets/images/flowershow/flowers/01.png" alt="" className='perfume__hiding-image  perfume__hiding-image--moved-1' />
-                    <img src="/src/assets/images/flowershow/flowers/14.png" alt="" className='perfume__hiding-image  perfume__hiding-image--moved-14' />
-                    <img src="/src/assets/images/flowershow/flowers/04.png" alt="" className='perfume__hiding-image  perfume__hiding-image--moved-4' />
-                    <img src="/src/assets/images/flowershow/flowers/image40.png" alt="" className='perfume__hiding-image  perfume__hiding-image--moved-40' />
-                    <img src="/src/assets/images/flowershow/flowers/image39.png" alt="" className='perfume__hiding-image  perfume__hiding-image--moved-39' />
-                    <img src="/src/assets/images/flowershow/flowers/12.png" alt="" className='perfume__hiding-image  perfume__hiding-image--moved-12' />
-                    <img src="/src/assets/images/flowershow/flowers/02.png" alt="" className='perfume__hiding-image  perfume__hiding-image--moved-2' />
-                    <img src="/src/assets/images/flowershow/flowers/13.png" alt="" className='perfume__hiding-image  perfume__hiding-image--moved-13' />
-                    <img src="/src/assets/images/flowershow/flowers/image35.png" alt="" className='perfume__hiding-image  perfume__hiding-image--moved-35' />
-                    <img src="/src/assets/images/flowershow/flowers/03.png" alt="" className='perfume__hiding-image  perfume__hiding-image--moved-3' />
-                    <img src="/src/assets/images/flowershow/flowers/8.png" alt="" className='perfume__hiding-image  perfume__hiding-image--moved-8' />
-                    <img src="/src/assets/images/flowershow/flowers/5.png" alt="" className='perfume__hiding-image  perfume__hiding-image--moved-5' />
+                    <img src="/src/assets/images/flowershow/flowers/10.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-10" />
+                    <img src="/src/assets/images/flowershow/flowers/11.png" alt="" className="perfume__hiding-image perfume__hiding-image--moved-11" />
+                    <img src="/src/assets/images/flowershow/flowers/01.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-1" />
+                    <img src="/src/assets/images/flowershow/flowers/14.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-14" />
+                    <img src="/src/assets/images/flowershow/flowers/04.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-4" />
+                    <img src="/src/assets/images/flowershow/flowers/image40.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-40" />
+                    <img src="/src/assets/images/flowershow/flowers/image39.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-39" />
+                    <img src="/src/assets/images/flowershow/flowers/12.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-12" />
+                    <img src="/src/assets/images/flowershow/flowers/02.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-2" />
+                    <img src="/src/assets/images/flowershow/flowers/13.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-13" />
+                    <img src="/src/assets/images/flowershow/flowers/image35.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-35" />
+                    <img src="/src/assets/images/flowershow/flowers/03.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-3" />
+                    <img src="/src/assets/images/flowershow/flowers/8.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-8" />
+                    <img src="/src/assets/images/flowershow/flowers/5.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-5" />
                 </div>
 
-                <p className='perfume__hiding-text' onClick={reveal}>click <br /> to reveal</p>
-
-
+                <p className="perfume__hiding-text" onClick={reveal}>click <br /> to reveal</p>
 
             </div>
-
-
         </div>
     )
 }

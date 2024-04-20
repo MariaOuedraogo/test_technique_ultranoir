@@ -1,4 +1,4 @@
-@import 'globals';
+@import "globals";
 
 .hero {
     &__img {
@@ -15,8 +15,6 @@
         letter-spacing: 0.175rem;
         line-height: 3.875rem;
         margin-bottom: 30px;
-        // margin: 156px 0 18px;
-
     }
 
 }
@@ -26,7 +24,6 @@
         &__img{
             position: absolute;
             margin:30.31px 36px ;
-
         }
 
         &__title{

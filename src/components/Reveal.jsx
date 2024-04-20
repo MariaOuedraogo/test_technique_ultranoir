@@ -1,14 +1,12 @@
-import React from 'react';
-import { FlowerShow } from './FlowerShow';
+import React from "react";
+import { FlowerShow } from "./FlowerShow";
 
+// section with the flowershow
 export function Reveal(props) {
     return (
         <React.Fragment >
             {props.children}
-
-            <FlowerShow>
-
-            </FlowerShow>
+            <FlowerShow />
         </React.Fragment>
     );
 }

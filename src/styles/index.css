@@ -3,28 +3,28 @@
   src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "subtitle-font";
   src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 *,
 *::before,
@@ -67,28 +67,28 @@ body {
   src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "subtitle-font";
   src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 *,
 *::before,
@@ -104,9 +104,9 @@ body {
 
 .button {
   background-color: hsl(339, 77%, 48%);
-  border-radius: 5rem;
+  border-radius: 80px;
   border: none;
-  font-family: "text-font";
+  font-family: "text-font", sans-serif;
   font-weight: bold;
   color: hsl(30, 100%, 99%);
 }
@@ -116,28 +116,28 @@ body {
   src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "subtitle-font";
   src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 *,
 *::before,
@@ -187,28 +187,28 @@ body {
   src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "subtitle-font";
   src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 *,
 *::before,
@@ -237,7 +237,7 @@ body {
 }
 .slide__image {
   height: 100%;
-  border-radius: 0.625rem;
+  border-radius: 10px;
   object-fit: cover;
   width: 100%;
 }
@@ -275,7 +275,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 0.2rem 1rem;
+  padding: 3.2px 16px;
   width: 100%;
 }
 .slide__button-text {
@@ -283,7 +283,7 @@ body {
 }
 .slide__num {
   text-align: center;
-  font-family: "text-font";
+  font-family: "text-font", sans-serif;
   font-size: 0.75rem;
   line-height: 1.5rem;
   margin-top: 20px;
@@ -304,7 +304,7 @@ body {
     display: flex;
     align-items: center;
     height: 100vh;
-    margin: auto 1rem;
+    margin: auto 16px;
   }
   .desk-slide__image-container, .desk-slide__text-container {
     width: 50%;
@@ -334,7 +334,7 @@ body {
     line-height: 1.5rem;
   }
   .desk-slide__text {
-    font-family: "text-font";
+    font-family: "text-font", sans-serif;
     margin: 0 0 34px;
     font-size: 0.813rem;
     line-height: 1.243rem;
@@ -346,14 +346,14 @@ body {
     margin-bottom: 1.2rem;
   }
   .desk-slide__num {
-    font-family: "text-font";
+    font-family: "text-font", sans-serif;
     font-size: 0.75rem;
   }
   .desk-slide__button {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 0.2rem 2rem;
+    padding: 3.2px 32px;
     margin: 0;
     font-size: 0.813rem;
     cursor: pointer;
@@ -361,17 +361,15 @@ body {
   .desk-slide__image-container {
     max-height: 95vh;
     overflow-y: hidden;
-    border-radius: 0.625rem;
+    border-radius: 10px;
   }
   .desk-slide__image {
     width: 100%;
-    border-radius: 0.625rem;
+    border-radius: 0.1px;
     height: 95vh;
     object-fit: cover;
   }
   .desk-slide__text-img--left {
-    margin-left: -8%;
-    margin-top: 10%;
     margin: 10% 0 -20px -8%;
     width: 118.15px;
   }
@@ -397,28 +395,28 @@ body {
   src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "subtitle-font";
   src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 *,
 *::before,
@@ -556,7 +554,7 @@ body {
   z-index: 10;
   position: absolute;
   border-radius: 50%;
-  padding: 1.5rem 1rem;
+  padding: 24px 16px;
   font-size: 0.813rem;
   transform: translate(100%, -65%);
   width: 40%;
@@ -593,28 +591,28 @@ body {
   src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "subtitle-font";
   src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "text-font";
   src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 *,
 *::before,
