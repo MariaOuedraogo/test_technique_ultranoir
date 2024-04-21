@@ -154,7 +154,6 @@ export function Slider() {
             gsap.to(".desk-slide__title-content", { y: titleDistanceToMove });
             gsap.to(".desk-slide__num-content", { y: numDistanceToMove });
             currentIndex = lastIndex;
-
         }
     };
 

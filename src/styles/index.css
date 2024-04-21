@@ -368,6 +368,7 @@ body {
     border-radius: 0.1px;
     height: 95vh;
     object-fit: cover;
+    margin-bottom: -3.6px;
   }
   .desk-slide__text-img--left {
     margin: 10% 0 -20px -8%;
