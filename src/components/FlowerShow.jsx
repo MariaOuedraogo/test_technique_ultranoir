@@ -166,24 +166,24 @@ export function FlowerShow() {
         <div className="flowershow">
             <div className="flowershow-background flowershow-background-test">
                 <div className="flowershow__image-container flowershow__image-container--first-move">
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image flowershow__image--third-move " />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image flowershow__image--third-move " loading="lazy"/>
                     <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image" />
                 </div>
                 <div className="flowershow__image-container flowershow__image-container--second-move">
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image flowershow__image--second-move " />
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image" />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image flowershow__image--second-move " loading="lazy"/>
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image" loading="lazy"/>
                 </div>
                 <div className="flowershow__image-container flowershow__image-container--third-move">
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image  flowershow__image--third-move" />
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image" />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image  flowershow__image--third-move" loading="lazy"/>
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image" loading="lazy"/>
                 </div>
                 <div className="flowershow__image-container flowershow__image-container--fourth-move ">
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image flowershow__image--fourth-move  " />
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image" />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image flowershow__image--fourth-move" loading="lazy" />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image"loading="lazy" />
                 </div>
                 <div className="flowershow__image-container flowershow__image-container--fifth-move">
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image flowershow__image--fifth-move " />
-                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image" />
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image flowershow__image--fifth-move " loading="lazy"/>
+                    <img src="/src/assets/images/flowershow/miss_dior_logo_mobile.png" alt="" className="flowershow__image"loading="lazy" />
                 </div>
             </div>
 
@@ -191,20 +191,20 @@ export function FlowerShow() {
                 <img src="/src/assets/images/flowershow/flacon.webp" alt="" className="perfume__image" />
                 
                 <div className="perfume__hiding-container">
-                    <img src="/src/assets/images/flowershow/flowers/10.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-10" />
-                    <img src="/src/assets/images/flowershow/flowers/11.png" alt="" className="perfume__hiding-image perfume__hiding-image--moved-11" />
-                    <img src="/src/assets/images/flowershow/flowers/01.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-1" />
-                    <img src="/src/assets/images/flowershow/flowers/14.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-14" />
-                    <img src="/src/assets/images/flowershow/flowers/04.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-4" />
-                    <img src="/src/assets/images/flowershow/flowers/image40.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-40" />
-                    <img src="/src/assets/images/flowershow/flowers/image39.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-39" />
-                    <img src="/src/assets/images/flowershow/flowers/12.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-12" />
-                    <img src="/src/assets/images/flowershow/flowers/02.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-2" />
-                    <img src="/src/assets/images/flowershow/flowers/13.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-13" />
-                    <img src="/src/assets/images/flowershow/flowers/image35.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-35" />
-                    <img src="/src/assets/images/flowershow/flowers/03.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-3" />
-                    <img src="/src/assets/images/flowershow/flowers/8.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-8" />
-                    <img src="/src/assets/images/flowershow/flowers/5.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-5" />
+                    <img src="/src/assets/images/flowershow/flowers/10.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-10" loading="lazy"/>
+                    <img src="/src/assets/images/flowershow/flowers/11.png" alt="" className="perfume__hiding-image perfume__hiding-image--moved-11" loading="lazy"/>
+                    <img src="/src/assets/images/flowershow/flowers/01.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-1" loading="lazy"/>
+                    <img src="/src/assets/images/flowershow/flowers/14.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-14" loading="lazy"/>
+                    <img src="/src/assets/images/flowershow/flowers/04.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-4" loading="lazy"/>
+                    <img src="/src/assets/images/flowershow/flowers/image40.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-40" loading="lazy"/>
+                    <img src="/src/assets/images/flowershow/flowers/image39.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-39" loading="lazy" />
+                    <img src="/src/assets/images/flowershow/flowers/12.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-12" loading="lazy" />
+                    <img src="/src/assets/images/flowershow/flowers/02.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-2" loading="lazy" />
+                    <img src="/src/assets/images/flowershow/flowers/13.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-13"loading="lazy" />
+                    <img src="/src/assets/images/flowershow/flowers/image35.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-35" loading="lazy"/>
+                    <img src="/src/assets/images/flowershow/flowers/03.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-3" loading="lazy"/>
+                    <img src="/src/assets/images/flowershow/flowers/8.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-8" loading="lazy"/>
+                    <img src="/src/assets/images/flowershow/flowers/5.png" alt="" className="perfume__hiding-image  perfume__hiding-image--moved-5" loading="lazy"/>
                 </div>
 
                 <p className="perfume__hiding-text" onClick={reveal}>click <br /> to reveal</p>

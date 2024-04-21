@@ -113,6 +113,14 @@ export function Slider() {
 
     let currentIndex = 0; // Ajoutez une variable pour suivre l"index actuel du slider
 
+    
+        // using the slider with the keyboard
+        // document.addEventListener('keydown', function(event) {
+        //     if (event.key === "Enter") { 
+        //         animateUp();
+        //     }
+        // });
+    
     const animateUp = () => {
         // Déplacez vers le haut seulement si ce n"est pas la dernière image
         if (currentIndex < sliderComponent.length - 1) {
@@ -152,13 +160,17 @@ export function Slider() {
 
 
 
+    
+
+
+
     return (
         <React.Fragment>
             <div className="slides-container slides-container--mobile">
                 {sliderComponent.map((slide, index) => (
                     <div key={index} className="slide">
                         <div className="slide__image-container">
-                            <img src={slide.img} alt="" className="slide__image" />
+                            <img src={slide.img} alt="" className="slide__image" loading="eager"  />
                         </div>
                         <div className="slide__text-container">
                             <h2 className="slide__title">
@@ -170,7 +182,7 @@ export function Slider() {
                             <h3 className="slide__subtitle">{slide.subtitleShort}</h3>
                             <p className="slide__text">{slide.detailsShort}</p>
                             <Button className="slide__button">
-                                <img src="/src/assets/images/add_to_cart.svg" alt="" className="slide__button-img" />
+                                <img src="/src/assets/images/add_to_cart.svg" alt="" className="slide__button-img" loading="eager"/>
                                 <p className="slide__button-text">Order</p>
                             </Button>
                             <p className="slide__num">{index + 1 <= 5 ? `0${index + 1}` : index++} / 05 </p>
@@ -184,7 +196,7 @@ export function Slider() {
             <div className="desk-slides-container desk-slides-container--show ">
                 <div className="desk-slide">
                     <div className="desk-slide__text-container">
-                        <img src="src/assets/images/slider/flower_slider1.png" alt="" className="desk-slide__text-img desk-slide__text-img--left" />
+                        <img src="src/assets/images/slider/flower_slider1.png" alt="" className="desk-slide__text-img desk-slide__text-img--left" loading="eager"/>
 
                         <div className="desk-slide__num-container">
                             <div className="desk-slide__num-content">
@@ -210,17 +222,17 @@ export function Slider() {
                         <p className="desk-slide__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget velit a elit finibus lacinia id at diam. Proin placerat dignissim risus ac finibus. Sed fermentum, sem et dignissim venenatis, felis massa volutpat eros.  </p>
 
                         <Button className="desk-slide__button">
-                            <img src="/src/assets/images/add_to_cart.svg" alt="" className="slide__button-img" />
+                            <img src="/src/assets/images/add_to_cart.svg" alt="" className="slide__button-img" loading="eager"/>
                             <p className="slide__button-text">
                                 Order
                             </p>
                         </Button>
                         <div className="desk-slide__bottom-container">
                             <div className="desk-slide__controls">
-                                <img src="src/assets/images/slider/arrow_left.png" alt="" className="desk-slide__arrow desk-side__arrow--left" onClick={animateDown} />
-                                <img src="src/assets/images/slider/arrow_right.png" alt="" className="desk-slide__arrow desk-side__arrow--right" onClick={animateUp} />
+                                <img src="src/assets/images/slider/arrow_left.png" alt="" className="desk-slide__arrow desk-side__arrow--left" onClick={animateDown} /*tabindex="0"*/ loading="eager"/>
+                                <img src="src/assets/images/slider/arrow_right.png" alt="" className="desk-slide__arrow desk-side__arrow--right" onClick={animateUp} /*tabindex="0"*/ loading="eager"/>
                             </div>
-                            <img src="src/assets/images/slider/flower_slider2.png" alt="" className="desk-slide__text-img desk-slide__text-img--right" />
+                            <img src="src/assets/images/slider/flower_slider2.png" alt="" className="desk-slide__text-img desk-slide__text-img--right" loading="eager"/>
                         </div>
 
                     </div>
@@ -228,7 +240,7 @@ export function Slider() {
                     <div className="desk-slide__image-container">
                         <div className="desk-slide__image-content">
                             {sliderComponent.map((slide, index) => (
-                                <img className="desk-slide__image desk-slide__image--scale" src={slide.img} alt="" />
+                                <img className="desk-slide__image desk-slide__image--scale" src={slide.img} alt="" loading="eager"/>
                             ))}
                         </div>
                     </div>
