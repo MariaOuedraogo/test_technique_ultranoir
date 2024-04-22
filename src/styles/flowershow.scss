@@ -1,12 +1,11 @@
 @import "globals";
 
-.flowershow {
-    position: relative;
-}
+
 
 .flowershow-background {
     overflow: hidden;
     margin-top: 50px;
+    
 }
 
 .flowershow {
@@ -15,6 +14,8 @@
     width: 100%;
     top: 0;
     box-sizing: border-box;
+    height: max-content; /* Set initial height based on content */
+
 
     &__image-container {
         display: flex;
@@ -178,9 +179,29 @@
 }
 
 
-@media(min-width:1000px) {
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .perfume {
+        &__hiding-text {
+            width: 50%;
+            height: 50%;
+        }
+    }
+}
+
+@media(min-width:1000px){
+    .perfume {
+        &__hiding-text {
+            width: 20%;
+            height: 20%;
+        }
+    }
+
+}
+
+@media(min-width:600px) {
     .perfume-container {
-        width: 27%;
+        width: 30%;
     }
 
     .flowershow {
@@ -204,11 +225,7 @@
 
     }
 
-    .perfume {
-        &__hiding-text {
-            width: 25%;
-            height: 25%;
-        }
-    }
-
+    
 }
+
+
