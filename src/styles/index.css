@@ -572,17 +572,20 @@ body {
     width: 50%;
     height: 50%;
   }
+  .perfume-container {
+    width: 35%;
+  }
 }
 @media (min-width: 1000px) {
   .perfume__hiding-text {
     width: 20%;
     height: 20%;
   }
-}
-@media (min-width: 600px) {
   .perfume-container {
     width: 30%;
   }
+}
+@media (min-width: 600px) {
   .flowershow__image-container--fourth-move, .flowershow__image-container--fifth-move {
     display: none;
   }
