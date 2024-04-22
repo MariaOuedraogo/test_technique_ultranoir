@@ -15,7 +15,9 @@
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
-    padding-top: 70px;
+    padding-top: 74px;
+    padding-bottom: 29px;
+    // height: 96px;
 
     &__text {
         font-family: "title-font", sans-serif;
@@ -26,11 +28,18 @@
         transform: translateX(0);
         white-space: nowrap;
         animation: marquee 15s linear infinite;
+
     }
 }
 
 @media (min-width:1000px) {
+
+    .marquee{
+
+    }
     .marquee__text {
         font-size: 12.875rem;
+        line-height: 16.75rem;
+
     }
 }
