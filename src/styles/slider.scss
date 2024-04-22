@@ -1,4 +1,4 @@
-@import "globals";
+// @import "globals";
 
 .slides-container {
     display: flex;
@@ -113,7 +113,7 @@
         }
 
         &__title-container {
-            max-height: 6.7rem;
+            max-height: 7rem;
             overflow: hidden;
         }
 

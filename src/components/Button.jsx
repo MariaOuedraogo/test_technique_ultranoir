@@ -1,4 +1,4 @@
-import "../styles/index.css";
+// import "../styles/index.css";
 import PropTypes from "prop-types";
 
 export function Button(props) {

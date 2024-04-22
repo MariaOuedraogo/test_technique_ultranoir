@@ -1,4 +1,4 @@
-import "../styles/index.css";
+// import "../styles/index.css";
 import { Marquee } from "./Marquee";
 import { Listing } from "./Listing";
 import PropTypes from "prop-types";

@@ -63,47 +63,6 @@ body {
     display: none;
   }
 }
-@font-face {
-  font-family: "title-font";
-  src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "subtitle-font";
-  src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "text-font";
-  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "text-font";
-  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: block;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background-color: hsl(30, 100%, 99%);
-  color: hsl(0, 0%, 0%);
-  overflow-x: hidden;
-}
-
 .button {
   background-color: hsl(339, 77%, 48%);
   border-radius: 80px;
@@ -112,47 +71,6 @@ body {
   font-weight: bold;
   color: hsl(30, 100%, 99%);
   line-height: 1.251rem;
-}
-
-@font-face {
-  font-family: "title-font";
-  src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "subtitle-font";
-  src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "text-font";
-  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "text-font";
-  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: block;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background-color: hsl(30, 100%, 99%);
-  color: hsl(0, 0%, 0%);
-  overflow-x: hidden;
 }
 
 @keyframes marquee {
@@ -188,47 +106,6 @@ body {
     line-height: 16.75rem;
   }
 }
-@font-face {
-  font-family: "title-font";
-  src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "subtitle-font";
-  src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "text-font";
-  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "text-font";
-  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: block;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background-color: hsl(30, 100%, 99%);
-  color: hsl(0, 0%, 0%);
-  overflow-x: hidden;
-}
-
 .slides-container {
   display: flex;
   flex-wrap: nowrap;
@@ -399,47 +276,6 @@ body {
     width: 100%;
   }
 }
-@font-face {
-  font-family: "title-font";
-  src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "subtitle-font";
-  src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "text-font";
-  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "text-font";
-  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: block;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background-color: hsl(30, 100%, 99%);
-  color: hsl(0, 0%, 0%);
-  overflow-x: hidden;
-}
-
 .flowershow-background {
   overflow: hidden;
   margin-top: 50px;
@@ -604,47 +440,6 @@ body {
     margin-left: -5px;
   }
 }
-@font-face {
-  font-family: "title-font";
-  src: url("../assets/fonts/din/DIN Condensed Bold.woff2") format("woff2"), url("../assets/fonts/din/DIN Condensed Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "subtitle-font";
-  src: url("../assets/fonts/arial/Arial.woff2") format("woff2"), url("../assets/fonts/arial/Arial.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "text-font";
-  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "text-font";
-  src: url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff2") format("woff2"), url("../assets/fonts/century_gothic/Monotype - Century Gothic Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: block;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background-color: hsl(30, 100%, 99%);
-  color: hsl(0, 0%, 0%);
-  overflow-x: hidden;
-}
-
 .discover-container {
   z-index: 1;
   position: sticky;
@@ -655,6 +450,92 @@ body {
   border-bottom: solid 3px hsl(30, 100%, 99%);
   border-right: solid 3px hsl(30, 100%, 99%);
   padding: 2px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  letter-spacing: 0.049rem;
+  font-family: "text-font", sans-serif;
+  font-size: 0.813rem;
+  color: hsl(0, 0%, 50%);
+}
+.filter__container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.filter__num-products {
+  line-height: 1.097rem;
+}
+.filter__text {
+  line-height: 0.952rem;
+}
+.filter__img {
+  width: 9px;
+}
+
+.filters {
+  position: fixed;
+  height: 100vh;
+  width: calc(100% - 20px);
+  top: 0;
+  right: 0;
+  background-color: hsl(30, 100%, 99%);
+  z-index: 2;
+  font-family: "text-font", sans-serif;
+  padding: 25px 10px 25px 30px;
+  color: hsl(0, 0%, 0%);
+  display: none;
+}
+.filters__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px 25px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.filters__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 0%);
+  opacity: 0.6;
+  z-index: 1;
+  display: none;
+}
+.filters__title {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2.104rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.filters__filterBy {
+  margin-bottom: 16px;
+}
+.filters__filterBy-list {
+  list-style: none;
+}
+.filters__filterBy-title {
+  font-size: 0.813rem;
+  letter-spacing: 0.053rem;
+  margin: 0 0 -10px;
+}
+.filters__filterBy-label {
+  font-size: 0.813rem;
+  letter-spacing: 0.053rem;
+}
+.filters__filterBy-checkbox {
+  accent-color: hsl(339, 77%, 48%);
 }
 
 .card-container {

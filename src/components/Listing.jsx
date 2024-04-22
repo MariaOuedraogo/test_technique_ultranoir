@@ -1,4 +1,4 @@
-import "../styles/index.css";
+// import "../styles/index.css";
 import React, { useEffect, useState } from "react";
 import { Button } from "./Button";
 import { gsap } from "gsap";
@@ -33,7 +33,7 @@ export function Listing() {
 
                 }
             });
-            // .catch(error => console.log("ERROR"));
+        // .catch(error => console.log("ERROR"));
     }, [page]);
 
 
@@ -47,10 +47,101 @@ export function Listing() {
         });
     };
 
+    const show = document.querySelector(".filters");
+    const overlay = document.querySelector(".filters__overlay");
+
+    const filters = () => {
+        show.style.display = "block";
+        gsap.from(show, { x: 300, duration: 1 });
+
+        overlay.style.display = "block";
+        gsap.from(overlay, { opacity: 0, duration: 1 });
+
+    };
+
+    const close = () => {
+        
+        show.style.display = "none";
+        overlay.style.display = "none";
+
+    };
 
 
     return (
         <React.Fragment>
+            <div className="filter">
+                <p className="filter__num-product">45 articles</p>
+                <div className="filter__container" onClick={filters}>
+                    <p className="filter__text">filtrer par</p>
+                    <img src="src/assets/images/listing/arrow_down.png" alt="" className="filter__img" />
+                </div>
+            </div>
+            <div className="filters">
+                <h1 className="filters__title">filtrer par :</h1>
+                <div className="filters__filterBy">
+                    <h2 className="filters__filterBy-title">catégories</h2>
+                    <ul className="filters__filterBy-list">
+                        <li className="filters__filterBy-item">
+                            <input type="checkbox" id="checkbox1" className="filters__filterBy-checkbox" />
+                            <label htmlFor="checkbox1" className="filters__filterBy-label">Option 1</label>
+                        </li>
+                        <li className="filters__filterBy-item">
+                            <input type="checkbox" id="checkbox2" className="filters__filterBy-checkbox" />
+                            <label htmlFor="checkbox2" className="filters__filterBy-label">Option 2</label>
+                        </li>
+                        <li className="filters__filterBy-item">
+                            <input type="checkbox" id="checkbox3" className="filters__filterBy-checkbox" />
+                            <label htmlFor="checkbox3" className="filters__filterBy-label">Option 3</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="filters__filterBy">
+                    <h2 className="filters__filterBy-title">catégories</h2>
+                    <ul className="filters__filterBy-list">
+                        <li className="filters__filterBy-item">
+                            <input type="checkbox" id="checkbox1" className="filters__filterBy-checkbox" />
+                            <label htmlFor="checkbox1" className="filters__filterBy-label">Option 1</label>
+                        </li>
+                        <li className="filters__filterBy-item">
+                            <input type="checkbox" id="checkbox2" className="filters__filterBy-checkbox" />
+                            <label htmlFor="checkbox2" className="filters__filterBy-label">Option 2</label>
+                        </li>
+                        <li className="filters__filterBy-item">
+                            <input type="checkbox" id="checkbox3" className="filters__filterBy-checkbox" />
+                            <label htmlFor="checkbox3" className="filters__filterBy-label">Option 3</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="filters__filterBy">
+                    <h2 className="filters__filterBy-title">catégories</h2>
+                    <ul className="filters__filterBy-list">
+                        <li className="filters__filterBy-item">
+                            <input type="checkbox" id="checkbox1" className="filters__filterBy-checkbox" />
+                            <label htmlFor="checkbox1" className="filters__filterBy-label">Option 1</label>
+                        </li>
+                        <li className="filters__filterBy-item">
+                            <input type="checkbox" id="checkbox2" className="filters__filterBy-checkbox" />
+                            <label htmlFor="checkbox2" className="filters__filterBy-label">Option 2</label>
+                        </li>
+                        <li className="filters__filterBy-item">
+                            <input type="checkbox" id="checkbox3" className="filters__filterBy-checkbox" />
+                            <label htmlFor="checkbox3" className="filters__filterBy-label">Option 3</label>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <img src="src/assets/images/listing/close.png" alt="close filters" className="filters__img" onClick={close} />
+
+
+
+
+            </div>
+
+            <div className="filters__overlay"></div>
+
             <div className="card-container">
                 {products.map((product, index) => (
                     <div className="card" key={index}>

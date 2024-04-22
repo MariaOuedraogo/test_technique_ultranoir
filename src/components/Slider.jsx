@@ -1,4 +1,4 @@
-import "../styles/index.css";
+// import "../styles/index.css";
 import { Button } from "./Button";
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
