@@ -71,7 +71,7 @@ export function Slider() {
         };
 
         const dragging = (e) => {
-            // e.preventDefault(); // Pour empêcher le défilement par défaut pendant le drag and drop
+            e.preventDefault(); 
             if (startX !== undefined) {
                 const currentX = e.type === "touchmove" ? e.touches[0].clientX : e.clientX;
                 const diffX = startX - currentX;
@@ -81,25 +81,24 @@ export function Slider() {
 
         const dragEnd = () => {
             startX = undefined;
-            // Peut-être ajouter des opérations supplémentaires lors du relâchement du glisser-déposer
         };
 
         sliding.addEventListener("touchstart", dragStart, { passive: true });
         sliding.addEventListener("touchmove", dragging, { passive: true });
         sliding.addEventListener("touchend", dragEnd, { passive: true });
-        sliding.addEventListener("mousedown", dragStart, { passive: true });
-        sliding.addEventListener("mousemove", dragging, { passive: true });
-        sliding.addEventListener("mouseup", dragEnd, { passive: true });
-        sliding.addEventListener("mouseleave", dragEnd, { passive: true });
+        sliding.addEventListener("mousedown", dragStart, { passive: false });
+        sliding.addEventListener("mousemove", dragging, { passive: false });
+        sliding.addEventListener("mouseup", dragEnd, { passive: false });
+        sliding.addEventListener("mouseleave", dragEnd, { passive: false });
 
         return () => {
             sliding.removeEventListener("touchstart", dragStart, { passive: true });
             sliding.removeEventListener("touchmove", dragging, { passive: true });
             sliding.removeEventListener("touchend", dragEnd, { passive: true });
-            sliding.removeEventListener("mousedown", dragStart, { passive: true });
-            sliding.removeEventListener("mousemove", dragging, { passive: true });
-            sliding.removeEventListener("mouseup", dragEnd, { passive: true });
-            sliding.removeEventListener("mouseleave", dragEnd, { passive: true });
+            sliding.removeEventListener("mousedown", dragStart, { passive: false });
+            sliding.removeEventListener("mousemove", dragging, { passive: false });
+            sliding.removeEventListener("mouseup", dragEnd, { passive: false });
+            sliding.removeEventListener("mouseleave", dragEnd, { passive: false });
         };
     }, []);
 

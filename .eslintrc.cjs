@@ -17,10 +17,10 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    'quotes': ['error', 'double'],// Enforce the use of double quotes for strings
-    'semi': ['error', 'always'], // Enforce the use of semicolons at the end of statements
-    'object-curly-spacing': ['error', 'always'], // Enforce consistent spacing inside braces of object literals
-    'arrow-spacing': ['error', { 'before': true, 'after': true }] // Enforce consistent spacing around arrow function arrows
+    'quotes': ['error', 'double'],// use of double quotes for strings
+    'semi': ['error', 'always'], // use of semicolons at the end of statements
+    'object-curly-spacing': ['error', 'always'], //  spacing inside braces of object literals
+    'arrow-spacing': ['error', { 'before': true, 'after': true }] //  consistent spacing around arrow function arrows
 
 
   },

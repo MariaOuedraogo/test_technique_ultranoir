@@ -8,12 +8,14 @@
     gap: 15px;
     padding: 0 30px;
     scroll-behavior: smooth;
+    // scroll-snap-type: x mandatory;
 }
 
 .slide {
 
     &__image-container {
         aspect-ratio: 339/340;
+        // scroll-snap-align: center;
     }
 
     &__image {

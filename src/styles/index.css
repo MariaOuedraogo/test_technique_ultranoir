@@ -36,6 +36,7 @@ body {
   margin: 0;
   background-color: hsl(30, 100%, 99%);
   color: hsl(0, 0%, 0%);
+  overflow-x: hidden;
 }
 
 .hero__img {
@@ -100,6 +101,7 @@ body {
   margin: 0;
   background-color: hsl(30, 100%, 99%);
   color: hsl(0, 0%, 0%);
+  overflow-x: hidden;
 }
 
 .button {
@@ -150,6 +152,7 @@ body {
   margin: 0;
   background-color: hsl(30, 100%, 99%);
   color: hsl(0, 0%, 0%);
+  overflow-x: hidden;
 }
 
 @keyframes marquee {
@@ -223,6 +226,7 @@ body {
   margin: 0;
   background-color: hsl(30, 100%, 99%);
   color: hsl(0, 0%, 0%);
+  overflow-x: hidden;
 }
 
 .slides-container {
@@ -433,6 +437,7 @@ body {
   margin: 0;
   background-color: hsl(30, 100%, 99%);
   color: hsl(0, 0%, 0%);
+  overflow-x: hidden;
 }
 
 .flowershow-background {
@@ -637,6 +642,7 @@ body {
   margin: 0;
   background-color: hsl(30, 100%, 99%);
   color: hsl(0, 0%, 0%);
+  overflow-x: hidden;
 }
 
 .discover-container {
