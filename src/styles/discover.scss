@@ -1,10 +1,13 @@
 @import "globals";
 
-.discover-container{
+.discover-container {
+    z-index: 1;
     position: sticky;
-        width: 100%;
-        top: 0;
-        box-sizing: border-box;
-        background-color: $bg-color;
-        height: 110vh;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    background-color: $bg-color;
+    border-bottom: solid 3px $bg-color;
+    border-right:solid 3px $bg-color ;
+    padding: 2px;
 }
