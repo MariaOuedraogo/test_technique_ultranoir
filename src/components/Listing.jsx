@@ -9,17 +9,17 @@ export function Listing() {
     const [totalPages, setTotalPages] = useState(1);
 
     useEffect(() => {
-        const username = 'flowershow';
-        const password = 'Ych9eUTlXNFB';
+        const username = "flowershow";
+        const password = "Ych9eUTlXNFB";
 
         fetch(`http://46.101.133.209/api/products?page=${page}`, {
             headers: {
-                'Authorization': 'Basic ' + btoa(username + ':' + password),
+                "Authorization": "Basic " + btoa(username + ":" + password),
             }
         })
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('La requête a échoué');
+                    throw new Error("La requête a échoué");
                 }
                 return response.json();
             })
@@ -32,8 +32,8 @@ export function Listing() {
                     setProducts(prevProducts => [...prevProducts, ...data.data.items]); // Add additional products
 
                 }
-            })
-            .catch(error => console.log("ERROR"));
+            });
+            // .catch(error => console.log("ERROR"));
     }, [page]);
 
 

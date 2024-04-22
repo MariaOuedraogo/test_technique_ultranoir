@@ -1,5 +1,5 @@
 import "../styles/index.css";
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -211,5 +211,5 @@ export function FlowerShow() {
 
             </div>
         </div>
-    )
+    );
 }
