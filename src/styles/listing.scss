@@ -31,22 +31,27 @@
 .filters {
     position: fixed;
     height: 100vh;
-    width: calc(70% - 20px);
+    width: calc(100% - 20px);
     top: 0;
     right: 0;
     background-color: $bg-color;
     z-index: 2;
     font-family: "text-font", sans-serif;
-    padding: 25px 10px 25px 30px;
+    padding: 35px 30px 0 ;
     color: $text-color;
     display: none;
+    overflow: auto;
+    scroll-behavior: smooth;
+    text-transform: uppercase;
+
+
 
     // closing 
     &__img {
         position: absolute;
         top: 0;
         right: 0;
-        margin: 20px 25px;
+        margin: 25px 30px;
         width: 15px;
         height: 15px;
         cursor: pointer;
@@ -67,10 +72,8 @@
         font-size: 1rem;
         font-weight: bold;
         line-height: 2.104rem;
-        text-transform: uppercase;
         letter-spacing: 0.06rem;
-        margin-top: 50px;
-        margin-bottom: 25px;
+        margin: 0 0 24px ;
     }
 
     &__filterBy {
@@ -79,23 +82,28 @@
 
     &__filterBy-list {
         list-style: none;
+        padding: 0;
+        border-top: solid #cccccc .02rem;
+        margin: 1rem 0 2rem;
+    }
+    &__filterBy-item{
+        margin-top: 16px;
+        cursor: pointer;
+
     }
 
-    &__filterBy-title {
+    &__filterBy-item:hover{
+        font-weight: bold;
+    }
+
+
+    &__filterBy-title, &__filterBy-name{
         font-size: $subtitle-size;
-        letter-spacing: 0.053rem;
-        margin: 0 0 -10px;
-    }
-
-    &__filterBy-label {
-        font-size: $subtitle-size;
-        letter-spacing: 0.053rem;
+        // letter-spacing: 0.053rem;
+        margin: 0;
 
     }
-
-    &__filterBy-checkbox {
-        accent-color: $primary-color;
-    }
+    
 
 
 }
@@ -169,11 +177,7 @@
     }
 }
 
-// @media(min-width:800px){
-//     .filter__container{
-//         display: none;
-//     }
-// }
+
 
 @media(min-width:1000px) {
     .card-container {

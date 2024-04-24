@@ -480,21 +480,24 @@ body {
 .filters {
   position: fixed;
   height: 100vh;
-  width: calc(70% - 20px);
+  width: calc(100% - 20px);
   top: 0;
   right: 0;
   background-color: hsl(30, 100%, 99%);
   z-index: 2;
   font-family: "text-font", sans-serif;
-  padding: 25px 10px 25px 30px;
+  padding: 35px 30px 0;
   color: hsl(0, 0%, 0%);
   display: none;
+  overflow: auto;
+  scroll-behavior: smooth;
+  text-transform: uppercase;
 }
 .filters__img {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 20px 25px;
+  margin: 25px 30px;
   width: 15px;
   height: 15px;
   cursor: pointer;
@@ -513,28 +516,28 @@ body {
   font-size: 1rem;
   font-weight: bold;
   line-height: 2.104rem;
-  text-transform: uppercase;
   letter-spacing: 0.06rem;
-  margin-top: 50px;
-  margin-bottom: 25px;
+  margin: 0 0 24px;
 }
 .filters__filterBy {
   margin-bottom: 16px;
 }
 .filters__filterBy-list {
   list-style: none;
+  padding: 0;
+  border-top: solid #cccccc 0.02rem;
+  margin: 1rem 0 2rem;
 }
-.filters__filterBy-title {
+.filters__filterBy-item {
+  margin-top: 16px;
+  cursor: pointer;
+}
+.filters__filterBy-item:hover {
+  font-weight: bold;
+}
+.filters__filterBy-title, .filters__filterBy-name {
   font-size: 0.813rem;
-  letter-spacing: 0.053rem;
-  margin: 0 0 -10px;
-}
-.filters__filterBy-label {
-  font-size: 0.813rem;
-  letter-spacing: 0.053rem;
-}
-.filters__filterBy-checkbox {
-  accent-color: hsl(339, 77%, 48%);
+  margin: 0;
 }
 
 .card-container {
