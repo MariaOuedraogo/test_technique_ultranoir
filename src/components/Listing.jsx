@@ -77,9 +77,9 @@ export function Listing() {
         }));
         setPage(1); // Reset page to 1 when filters are updated
     };
-    
-    
-    
+
+
+
 
     useEffect(() => {
         const username = "flowershow";
@@ -152,7 +152,13 @@ export function Listing() {
     return (
         <React.Fragment>
             <div className="filter">
-                <p className="filter__num-product">{totalItems} articles</p>
+
+                {totalItems === 1 ? (
+                    <p className="filter__num-product"> {totalItems} article  </p>
+                ) : (
+                    <p className="filter__num-product"> {totalItems} articles </p>
+                )}
+
                 <div className="filter__container" onClick={filters}>
                     <p className="filter__text">filtrer par</p>
                     <img src="src/assets/images/listing/arrow_down.png" alt="" className="filter__img" />
@@ -165,8 +171,8 @@ export function Listing() {
                         <h2 className="filters__filterBy-title">{filterData[filterType].label}</h2>
                         <ul className="filters__filterBy-list">
                             {Array.isArray(filterData[filterType].items) && filterData[filterType].items.map((item, idx) => (
-                            <li key={idx} className={`filters__filterBy-item ${selectedFilters[filterType].includes(item.id) ? "filters__active" : ""}`}>
-                            <p htmlFor={`${filterType}-${item.id}`} className="filters__filterBy-name" onClick={() => updateSelectedFilters(filterType, item.id)}>{item.label}</p>
+                                <li key={idx} className={`filters__filterBy-item ${selectedFilters[filterType].includes(item.id) ? "filters__active" : ""}`}>
+                                    <p htmlFor={`${filterType}-${item.id}`} className="filters__filterBy-name" onClick={() => updateSelectedFilters(filterType, item.id)}>{item.label}</p>
                                 </li>
                             ))}
                         </ul>
@@ -179,7 +185,9 @@ export function Listing() {
                 {products.map((product, index) => (
                     <div className="card" key={index}>
                         <div className="card__img-container">
-                            <img src={product.image} alt={product.name} className="card__img" />
+                            <a href={product.url} target='_blank' className="card__link">
+                                <img src={product.image} alt={product.name} className="card__img" />
+                            </a>
                         </div>
                         <div className="card__text-container">
                             <h2 className="card__title">{product.name}</h2>
