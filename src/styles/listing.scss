@@ -44,7 +44,11 @@
     scroll-behavior: smooth;
     text-transform: uppercase;
 
-
+    &__active{
+        // font-weight: bold;
+        // color: red;
+        text-decoration: underline;
+    }
 
     // closing 
     &__img {

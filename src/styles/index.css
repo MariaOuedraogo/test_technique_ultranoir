@@ -493,6 +493,9 @@ body {
   scroll-behavior: smooth;
   text-transform: uppercase;
 }
+.filters__active {
+  text-decoration: underline;
+}
 .filters__img {
   position: absolute;
   top: 0;
